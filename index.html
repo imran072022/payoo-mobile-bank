@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo Mobile App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body
+    class="outfit bg-[rgba(244,245,247,1)] h-[100vh] flex justify-center items-center pl-6 pr-6"
+  >
+    <div class="w-full max-w-[402px] flex justify-center items-center flex-col">
+      <div
+        class="w-[316px] h-[132px] bg-[url(assets/bg.png)] flex items-center justify-center"
+      >
+        <img src="assets/Group.png" alt="" />
+      </div>
+      <form class="bg-white w-full p-8 rounded-3xl">
+        <div>
+          <label class="font-medium text-[rgba(8,8,8,1)]" for=""
+            >Mobile Number</label
+          ><br />
+          <input
+            id="mobile-number"
+            type="text"
+            placeholder="Enter phone number"
+            class="input rounded-[32px] bg-[rgba(244,245,247,1)] mt-3 mb-4 w-full"
+          />
+        </div>
+        <div>
+          <label class="font-medium text-[rgba(8,8,8,1)]" for=""
+            >4 Digit Pin</label
+          ><br />
+          <input
+            id="pin-code"
+            type="text"
+            placeholder="Enter 4 Digit Pin"
+            class="input rounded-[32px] bg-[rgba(244,245,247,1)] mt-3 mb-4 w-full"
+          />
+        </div>
+        <button
+          class="btn rounded-[32px] w-full font-medium text-xl bg-[#0874F2] text-white"
+          id="login-button"
+        >
+          Login
+        </button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
