@@ -46,49 +46,51 @@
             is low and
           </p>
         </div>
-        <!--Grid part (3)-->
+        <!--Grid part, parent div (3)-->
         <div class="grid grid-cols-3 grid-rows-2 gap-[16.5px] box-border">
+          <!--Grid items-->
           <div
-            class="border border-[rgba(8,8,8,0.1)] rounded-xl text-center box-border py-5"
+            id="add-money-button"
+            class="border border-[rgba(8,8,8,0.1)] rounded-xl text-center box-border py-5 cursor-pointer"
           >
             <img class="mx-auto block" src="assets/wallet1.png" alt="" />
             <p class="text-[rgba(8,8,8,0.7)] text-[14px] mt-1">Add Money</p>
           </div>
           <div
-            class="border border-[rgba(8,8,8,0.1)] rounded-xl text-center box-border py-5"
+            id="cash-out-button"
+            class="border border-[rgba(8,8,8,0.1)] rounded-xl text-center box-border py-5 cursor-pointer"
           >
             <img class="mx-auto block" src="assets/send1.png" alt="" />
             <p class="text-[rgba(8,8,8,0.7)] text-[14px] mt-1">Cash Out</p>
           </div>
           <div
-            class="border border-[rgba(8,8,8,0.1)] rounded-xl text-center box-border py-5"
+            class="border border-[rgba(8,8,8,0.1)] rounded-xl text-center box-border py-5 cursor-pointer"
           >
             <img class="mx-auto block" src="assets/money1.png" alt="" />
             <p class="text-[rgba(8,8,8,0.7)] text-[14px] mt-1">Transfer</p>
           </div>
           <div
-            class="border border-[rgba(8,8,8,0.1)] rounded-xl text-center box-border py-5"
+            class="border border-[rgba(8,8,8,0.1)] rounded-xl text-center box-border py-5 cursor-pointer"
           >
             <img class="mx-auto block" src="assets/bonus1.png" alt="" />
             <p class="text-[rgba(8,8,8,0.7)] text-[14px] mt-1">Get Bonus</p>
           </div>
           <div
-            class="border border-[rgba(8,8,8,0.1)] rounded-xl text-center box-border py-5"
+            class="border border-[rgba(8,8,8,0.1)] rounded-xl text-center box-border py-5 cursor-pointer"
           >
             <img class="mx-auto block" src="assets/purse1.png" alt="" />
             <p class="text-[rgba(8,8,8,0.7)] text-[14px] mt-1">Pay Bill</p>
           </div>
           <div
-            class="border border-[rgba(8,8,8,0.1)] rounded-xl text-center box-border py-5"
+            class="border border-[rgba(8,8,8,0.1)] rounded-xl text-center box-border py-5 cursor-pointer"
           >
             <img class="mx-auto block" src="assets/transaction1.png" alt="" />
             <p class="text-[rgba(8,8,8,0.7)] text-[14px] mt-1">Transactions</p>
           </div>
         </div>
       </div>
-      <!--2nd half, Add money form-->
-
-      <div class="max-w-[402px] mx-auto mt-[31.5px]">
+      <!--2nd half, Add money section-->
+      <section id="add-money-section" class="max-w-[402px] mx-auto mt-[31.5px]">
         <h2 class="text-[18px] text-[rgba(8,8,8,0.9)] font-semibold mb-[16px]">
           Add Money
         </h2>
@@ -143,7 +145,48 @@
             Add Money
           </button>
         </form>
-      </div>
+      </section>
+      <!--Cash Out section-->
+      <section id="cash-out-section" class="max-w-[402px] mx-auto mt-[31.5px]">
+        <h2 class="text-[18px] text-[rgba(8,8,8,0.9)] font-semibold mb-[16px]">
+          Cash Out
+        </h2>
+        <form class="bg-white p-6 w-full m-auto rounded-3xl">
+          <label class="text-[rgba(8,8,8,0.7)] font-medium" for=""
+            >Agent Number</label
+          ><br />
+          <input
+            id="agent-number"
+            type="text"
+            placeholder="Enter 11 digit agent number"
+            class="input bg-[rgba(244,245,247,1)] rounded-[32px] border-none w-full h-[52px] mt-3 mb-4 pl-5"
+          /><br />
+
+          <label class="text-[rgba(8,8,8,0.7)] font-medium" for="">Amount</label
+          ><br />
+          <input
+            id="withdraw-amount"
+            type="text"
+            placeholder="Enter amount to withdraw"
+            class="input bg-[rgba(244,245,247,1)] rounded-[32px] border-none w-full h-[52px] mt-3 mb-4 pl-5"
+          /><br />
+          <label class="text-[rgba(8,8,8,0.7)] font-medium" for=""
+            >Pin Number</label
+          ><br />
+          <input
+            id="pin-number2"
+            type="text"
+            placeholder="Enter 4 digit pin number"
+            class="input bg-[rgba(244,245,247,1)] rounded-[32px] border-none w-full h-[52px] mt-3 mb-4 pl-5"
+          /><br />
+          <button
+            id="cash-out-btn"
+            class="btn w-full h-[52px] rounded-[32px] font-medium text-xl bg-[#0874F2] text-white"
+          >
+            Withdraw Money
+          </button>
+        </form>
+      </section>
     </div>
     <script src="home.js"></script>
   </body>
