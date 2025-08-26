@@ -51,38 +51,42 @@
           <!--Grid items-->
           <div
             id="add-money-button"
-            class="border border-[rgba(8,8,8,0.1)] rounded-xl text-center box-border py-5 cursor-pointer"
+            class="active-button-design border border-[rgba(8,8,8,0.1)] rounded-xl text-center box-border py-5 cursor-pointer"
           >
             <img class="mx-auto block" src="assets/wallet1.png" alt="" />
             <p class="text-[rgba(8,8,8,0.7)] text-[14px] mt-1">Add Money</p>
           </div>
           <div
             id="cash-out-button"
-            class="border border-[rgba(8,8,8,0.1)] rounded-xl text-center box-border py-5 cursor-pointer"
+            class="active-button-design border border-[rgba(8,8,8,0.1)] rounded-xl text-center box-border py-5 cursor-pointer"
           >
             <img class="mx-auto block" src="assets/send1.png" alt="" />
             <p class="text-[rgba(8,8,8,0.7)] text-[14px] mt-1">Cash Out</p>
           </div>
           <div
-            class="border border-[rgba(8,8,8,0.1)] rounded-xl text-center box-border py-5 cursor-pointer"
+            id="transfer-money-button"
+            class="active-button-design border border-[rgba(8,8,8,0.1)] rounded-xl text-center box-border py-5 cursor-pointer"
           >
             <img class="mx-auto block" src="assets/money1.png" alt="" />
             <p class="text-[rgba(8,8,8,0.7)] text-[14px] mt-1">Transfer</p>
           </div>
           <div
-            class="border border-[rgba(8,8,8,0.1)] rounded-xl text-center box-border py-5 cursor-pointer"
+            id="get-bonus-button"
+            class="active-button-design border border-[rgba(8,8,8,0.1)] rounded-xl text-center box-border py-5 cursor-pointer"
           >
             <img class="mx-auto block" src="assets/bonus1.png" alt="" />
             <p class="text-[rgba(8,8,8,0.7)] text-[14px] mt-1">Get Bonus</p>
           </div>
           <div
-            class="border border-[rgba(8,8,8,0.1)] rounded-xl text-center box-border py-5 cursor-pointer"
+            id="pay-bill-button"
+            class="active-button-design border border-[rgba(8,8,8,0.1)] rounded-xl text-center box-border py-5 cursor-pointer"
           >
             <img class="mx-auto block" src="assets/purse1.png" alt="" />
             <p class="text-[rgba(8,8,8,0.7)] text-[14px] mt-1">Pay Bill</p>
           </div>
           <div
-            class="border border-[rgba(8,8,8,0.1)] rounded-xl text-center box-border py-5 cursor-pointer"
+            id="transactions-button"
+            class="active-button-design border border-[rgba(8,8,8,0.1)] rounded-xl text-center box-border py-5 cursor-pointer"
           >
             <img class="mx-auto block" src="assets/transaction1.png" alt="" />
             <p class="text-[rgba(8,8,8,0.7)] text-[14px] mt-1">Transactions</p>
@@ -90,7 +94,10 @@
         </div>
       </div>
       <!--2nd half, Add money section-->
-      <section id="add-money-section" class="max-w-[402px] mx-auto mt-[31.5px]">
+      <section
+        id="add-money-section"
+        class="form max-w-[402px] mx-auto mt-[31.5px]"
+      >
         <h2 class="text-[18px] text-[rgba(8,8,8,0.9)] font-semibold mb-[16px]">
           Add Money
         </h2>
@@ -147,7 +154,10 @@
         </form>
       </section>
       <!--Cash Out section-->
-      <section id="cash-out-section" class="max-w-[402px] mx-auto mt-[31.5px]">
+      <section
+        id="cash-out-section"
+        class="form max-w-[402px] mx-auto mt-[31.5px]"
+      >
         <h2 class="text-[18px] text-[rgba(8,8,8,0.9)] font-semibold mb-[16px]">
           Cash Out
         </h2>
@@ -186,6 +196,153 @@
             Withdraw Money
           </button>
         </form>
+      </section>
+      <!--Transfer Money Section-->
+
+      <section
+        id="transfer-money-section"
+        class="form max-w-[402px] mx-auto mt-[31.5px]"
+      >
+        <h2 class="text-[18px] text-[rgba(8,8,8,0.9)] font-semibold mb-[16px]">
+          Transfer Money
+        </h2>
+        <form class="bg-white p-6 w-full m-auto rounded-3xl">
+          <label class="text-[rgba(8,8,8,0.7)] font-medium" for=""
+            >User Account Number</label
+          ><br />
+          <input
+            id="user-account-number"
+            type="text"
+            placeholder="Enter 11 digit number"
+            class="input bg-[rgba(244,245,247,1)] rounded-[32px] border-none w-full h-[52px] mt-3 mb-4 pl-5"
+          /><br />
+
+          <label class="text-[rgba(8,8,8,0.7)] font-medium" for="">Amount</label
+          ><br />
+          <input
+            id="transfer-amount"
+            type="text"
+            placeholder="Enter amount to transfer"
+            class="input bg-[rgba(244,245,247,1)] rounded-[32px] border-none w-full h-[52px] mt-3 mb-4 pl-5"
+          /><br />
+          <label class="text-[rgba(8,8,8,0.7)] font-medium" for=""
+            >Pin Number</label
+          ><br />
+          <input
+            id="pin-number3"
+            type="text"
+            placeholder="Enter 4 digit pin number"
+            class="input bg-[rgba(244,245,247,1)] rounded-[32px] border-none w-full h-[52px] mt-3 mb-4 pl-5"
+          /><br />
+          <button
+            id="transfer-money-btn"
+            class="btn w-full h-[52px] rounded-[32px] font-medium text-xl bg-[#0874F2] text-white"
+          >
+            Send Now
+          </button>
+        </form>
+      </section>
+      <!--Get Bonus Section-->
+      <section
+        id="get-bonus-section"
+        class="form max-w-[402px] mx-auto mt-[31.5px]"
+      >
+        <h2 class="text-[18px] text-[rgba(8,8,8,0.9)] font-semibold mb-[16px]">
+          Get Bonus
+        </h2>
+        <form class="bg-white p-6 w-full m-auto rounded-3xl">
+          <label class="text-[rgba(8,8,8,0.7)] font-medium" for=""
+            >Enter Bonus Coupon</label
+          ><br />
+          <input
+            id="user-account-number"
+            type="text"
+            placeholder="Enter your coupon"
+            class="input bg-[rgba(244,245,247,1)] rounded-[32px] border-none w-full h-[52px] mt-3 mb-4 pl-5"
+          /><br />
+          <button
+            id="transfer-money-btn"
+            class="btn w-full h-[52px] rounded-[32px] font-medium text-xl bg-[#0874F2] text-white"
+          >
+            Get Bonus
+          </button>
+        </form>
+      </section>
+      <!--Pay Bill Section-->
+      <section
+        id="pay-bill-section"
+        class="form max-w-[402px] mx-auto mt-[31.5px]"
+      >
+        <h2 class="text-[18px] text-[rgba(8,8,8,0.9)] font-semibold mb-[16px]">
+          Pay Bill
+        </h2>
+        <form class="bg-white p-6 w-full m-auto rounded-3xl">
+          <label class="text-[rgba(8,8,8,0.7)] font-medium" for=""
+            >Select A Bank</label
+          ><br />
+          <select
+            id="select-to-pay"
+            class="select select-ghost bg-[rgba(244,245,247,1)] rounded-[32px] w-full h-[52px] mt-3 mb-4 pl-5"
+          >
+            <option disabled selected>Select Bank</option>
+            <option>Sonali Bank</option>
+            <option>Islami Bank</option>
+            <option>Trust Bank</option>
+            <option>Rupali Bank</option>
+            <option>Janata Bank</option>
+            <option>Agrani Bank</option></select
+          ><br />
+          <label class="text-[rgba(8,8,8,0.7)] font-medium" for=""
+            >Biller Account Number</label
+          ><br />
+          <input
+            id="biller-account-number"
+            type="text"
+            placeholder="Enter account number"
+            class="input bg-[rgba(244,245,247,1)] rounded-[32px] border-none w-full h-[52px] mt-3 mb-4 pl-5"
+          /><br />
+
+          <label class="text-[rgba(8,8,8,0.7)] font-medium" for=""
+            >Amount to pay</label
+          ><br />
+          <input
+            id="amount-to-pay"
+            type="text"
+            placeholder="Add Amount to pay"
+            class="input bg-[rgba(244,245,247,1)] rounded-[32px] border-none w-full h-[52px] mt-3 mb-4 pl-5"
+          /><br />
+          <label class="text-[rgba(8,8,8,0.7)] font-medium" for=""
+            >Pin Number</label
+          ><br />
+          <input
+            id="pin-number4"
+            type="text"
+            placeholder="Enter 4 digit pin number"
+            class="input bg-[rgba(244,245,247,1)] rounded-[32px] border-none w-full h-[52px] mt-3 mb-4 pl-5"
+          /><br />
+          <button
+            id="transfer-money-btn"
+            class="btn w-full h-[52px] rounded-[32px] font-medium text-xl bg-[#0874F2] text-white"
+          >
+            Pay Now
+          </button>
+        </form>
+      </section>
+      <!--Transactions section-->
+      <section
+        id="transactions-section"
+        class="form max-w-[402px] mx-auto mt-[31.5px]"
+      >
+        <div class="flex items-center justify-between">
+          <h2
+            class="text-[18px] text-[rgba(8,8,8,0.9)] font-semibold mb-[16px]"
+          >
+            Get Bonus
+          </h2>
+          <p class="text-[14px] text-[rgba(8,8,8,0.5)]">View All</p>
+        </div>
+        <!--Card-->
+        <div id="transactions-container"></div>
       </section>
     </div>
     <script src="home.js"></script>
